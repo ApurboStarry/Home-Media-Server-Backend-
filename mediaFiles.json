@@ -1,0 +1,22 @@
+{
+  "movies": [
+    { 
+      "name": "Christopher Nolan Movies",
+      "path": "/media/apurbo/A69A97279A96F353/Procrastination/Christopher Nolan Movies"
+    },
+    {
+      "name": "Moneyball(2011)",
+      "path": "/media/apurbo/A69A97279A96F353/Procrastination/Moneyball (2011)/Moneyball.2011.720p.BrRip.x264.YIFY.mp4"
+    }, 
+    {
+      "name": "Spider-man into the spider verse",
+      "path": "/media/apurbo/A69A97279A96F353/Procrastination/Spider-Man Into The Spider-Verse (2018) [BluRay] [1080p] [YTS.AM]/Spider-Man.Into.The.Spider-Verse.2018.1080p.BluRay.x264-[YTS.AM].mp4"
+    }
+  ],
+  "photos": [
+
+  ],
+  "musics": [
+
+  ]
+}
