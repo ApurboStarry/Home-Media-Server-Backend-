@@ -1,10 +1,13 @@
-const { doesPathExists } = require("./utils/checkPathExistence");
+const { addTypeToPaths } = require("./utils/typeAdderToPaths");
 
 async function test() {
-  const isValid = await doesPathExists(
-    "/media/apurbo/A69A97279A96F353/Procrastination/Christopher Nolan Movies/Interstellar (2014) (2014) [1080p]/Interstellar.2014.2014.1080p.BluRay.x264.YIFY.mp4"
-  );
-  console.log(isValid);
+  const contents = await addTypeToPaths([
+    "/media/apurbo/A69A97279A96F353/Procrastination/Christopher Nolan Movies/Inception (2010) [1080p]/Inception.2010.1080p.BrRip.x264.YIFY.mp4",
+    "/media/apurbo/A69A97279A96F353/Procrastination/Christopher Nolan Movies/Inception (2010) [1080p]/Inception.2010.1080p.BrRip.x264.YIFY.srt",
+    "/media/apurbo/A69A97279A96F353/Procrastination/Christopher Nolan Movies/Inception (2010) [1080p]/Other",
+    "/media/apurbo/A69A97279A96F353/Procrastination/Christopher Nolan Movies/Inception (2010) [1080p]/WWW.YIFY-TORRENTS.COM.jpg",
+  ]);
+  console.log(contents);
 }
 
 test();

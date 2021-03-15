@@ -11,15 +11,15 @@ async function doesPathExists(filePath) {
   }
 
   if(isFile) {
-    console.log("File exists");
+    // console.log("File exists");
     return true;
   } else {
     try {
       const files = await fsPromises.readdir(filePath);
-      console.log("Directory exists");
-      files.forEach(file => {
-        console.log(file);
-      });
+      // console.log("Directory exists");
+      // files.forEach(file => {
+      //   console.log(file);
+      // });
 
       return true;
     } catch(e) {
