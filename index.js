@@ -10,6 +10,7 @@ const {
 } = require("./utils/mediaFileCalibrator");
 const { addTypeToPaths } = require("./utils/typeAdderToPaths");
 const removeTrailingSlashInPath = require("./utils/trailingSlashRemover");
+const { checkAccessibility } = require("./utils/pathAccessChecker");
 
 const app = express();
 calibrateMediaFiles();
@@ -70,8 +71,14 @@ app.get("/x-video", async (req, res) => {
   if (!isValidPath) {
     return res.status(400).send("No such file or directory exists");
   }
-
+  
   filePath = removeTrailingSlashInPath(filePath);
+  const canBeAccessed = checkAccessibility(filePath);
+
+  if(!canBeAccessed) {
+    return res.status(403).send("Access Forbidden");
+  }
+
   const stats = await fsPromises.stat(filePath);
 
   if (stats.isFile()) {
