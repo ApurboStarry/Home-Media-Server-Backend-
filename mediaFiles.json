@@ -1,15 +1,16 @@
 {
   "movies": [
-    {
-      "path": "/media/apurbo/A69A97279A96F353/Procrastination/Moneyball (2011)/Moneyball.2011.720p.BrRip.x264.YIFY.mp4"
-    },
-    {
-      "path": "/media/apurbo/A69A97279A96F353/Procrastination/Christopher Nolan Movies/"
-    },
-    {
-      "path": "/media/apurbo/A69A97279A96F353/Procrastination/Spider-Man Into The Spider-Verse (2018) [BluRay] [1080p] [YTS.AM]/Spider-Man.Into.The.Spider-Verse.2018.1080p.BluRay.x264-[YTS.AM].mp4"
-    }
+    "/media/apurbo/A69A97279A96F353/Procrastination/Moneyball (2011)/Moneyball.2011.720p.BrRip.x264.YIFY.mp4",
+    "/media/apurbo/A69A97279A96F353/Procrastination/Christopher Nolan Movies/",
+    "/media/apurbo/A69A97279A96F353/Procrastination/Spider-Man Into The Spider-Verse (2018) [BluRay] [1080p] [YTS.AM]/Spider-Man.Into.The.Spider-Verse.2018.1080p.BluRay.x264-[YTS.AM].mp4",
+    "/media/apurbo/A69A97279A96F353/Procrastination/MCU"
   ],
-  "photos": [],
+  "photos": [
+    "/home/apurbo/Pictures/BUET",
+    "/home/apurbo/Pictures/HackerRank",
+    "/home/apurbo/Pictures/99739.jpg",
+    "/home/apurbo/Pictures/Wallpapers",
+    "/home/apurbo/Pictures"
+  ],
   "musics": []
 }
