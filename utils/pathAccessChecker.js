@@ -28,12 +28,29 @@ checkAccessibilityOfPhoto = (requestedPath) => {
 };
 
 checkAccessibility = (requestedPath, type) => {
-  if (type === "movie") {
-    return checkAccessibilityOfMovie(requestedPath);
-  } else if (type === "photo") {
-    return checkAccessibilityOfPhoto(requestedPath);
-  } else if (type === "music") {
+  for (let i = 0; i < allMovies.length; i++) {
+    // console.log(requestedPath, allMovies[i].path);
+    if (requestedPath.startsWith(allMovies[i].path)) {
+      return true;
+    }
   }
+
+  for (let i = 0; i < allPhotos.length; i++) {
+    // console.log(requestedPath, allPhotos[i].path);
+    if (requestedPath.startsWith(allPhotos[i].path)) {
+      return true;
+    }
+  }
+
+  console.log("HERE");
+  return false;
+
+  // if (type === "movie") {
+  //   return checkAccessibilityOfMovie(requestedPath);
+  // } else if (type === "photo") {
+  //   return checkAccessibilityOfPhoto(requestedPath);
+  // } else if (type === "music") {
+  // }
 };
 
 module.exports.checkAccessibility = checkAccessibility;

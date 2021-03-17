@@ -61,9 +61,9 @@ app.get("/video", function (req, res) {
 });
 
 app.get("/x-video", async (req, res) => {
-  filePath = req.query.filePath;
+  let filePath = req.query.filePath;
 
-  if (filePath == "") {
+  if (filePath === "") {
     return res.send(allProvidedMovieFilesAndFolders);
   }
 
