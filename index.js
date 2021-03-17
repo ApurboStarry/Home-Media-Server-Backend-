@@ -161,7 +161,7 @@ app.get("/photos", async (req, res) => {
   const stats = await fsPromises.stat(filePath);
 
   if (stats.isFile()) {
-    const supportedExtensions = [".jpg", ".png", ".jpeg", ".svg"];
+    const supportedExtensions = [".jpg", ".JPG", ".png", ".jpeg", ".svg"];
     const extension = path.extname(filePath);
 
     if (supportedExtensions.indexOf(extension) < 0) {
