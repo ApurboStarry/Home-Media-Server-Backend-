@@ -1,7 +1,7 @@
 const fs = require("fs");
 const fsPromises = fs.promises
 
-const obj = JSON.parse(fs.readFileSync("./mediaFiles.json", "utf8"));
+const obj = JSON.parse(fs.readFileSync("../mediaFiles.json", "utf8"));
 
 for(let i = 0; i < obj.movies.length; i++) {
   const stats = fs.statSync(obj.movies[i].path)

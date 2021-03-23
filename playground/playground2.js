@@ -1,5 +1,5 @@
-const { calibrateMediaFiles } = require("./utils/mediaFileCalibrator");
-const { checkAccessibility } = require("./utils/pathAccessChecker");
+const { calibrateMediaFiles } = require("../utils/mediaFileCalibrator");
+const { checkAccessibility } = require("../utils/pathAccessChecker");
 
 calibrateMediaFiles();
 console.log(
