@@ -1,5 +1,9 @@
 # IMPORTANT: The repository of the frontend of this project is [here](https://github.com/ApurboStarry/Home-Media-Server-Frontend-)
 
+# Table of Contents
+- [What it does?](#what-it-does)
+- [How to run it?](#how-to-run-it)
+- [How it works?](#how-it-works)
 # What it does?
 This is LAN media server whose contents can be accessed by any device on the LAN.
 
